@@ -126,8 +126,8 @@ class IndexPage extends React.Component<{}, DeviceOrientationState> {
     return (
       <IndexLayout>
         <ThreeScene />
-        <li>【方位】{currentState.alpha}</li>
-        <li>【absolute】{currentState.degrees}</li>
+        <li>【方位】{currentState.degrees}</li>
+        <li>【absolute】{currentState.absolute}</li>
         <li>【alpha】{currentState.alpha}</li>
         <li>【beta】{currentState.beta}</li>
         <li>【gamma】{currentState.gamma}</li>
