@@ -17,13 +17,16 @@ class IndexPage extends React.Component<{}, DeviceOrientationState> {
   constructor(props: any) {
     super(props)
     this.state = {
-      absolute: 0,
+      absolute: false,
       alpha: 0,
       beta: 0,
       gamma: 0,
       degrees: 0
     }
+    this.onDeviceorientation = this.onDeviceorientation.bind(this);
+    this.compassHeading = this.compassHeading.bind(this);
   }
+
   componentDidMount() {
     const os = this.detectOSSimply()
     if (os == 'iphone') {
