@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 
 import Page from '../components/Page'
 import Container from '../components/Container'
+import { ThreeScene } from '../components/three-scene';
 import IndexLayout from '../layouts'
 
 class IndexPage extends React.Component<{}, {}> {
@@ -18,10 +19,7 @@ class IndexPage extends React.Component<{}, {}> {
     | undefined {
     return (
       <IndexLayout>
-        <h1>Hi people</h1>
-        <p>Welcome to your new Gatsby site.</p>
-        <p>Now go build something great.</p>
-        <Link to="/page-2/">Go to page 2</Link>
+        <ThreeScene ref={this.threeSceneRef} />
       </IndexLayout>
     )
   }
